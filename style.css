@@ -198,9 +198,9 @@ input {
   right: -100%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   body {
-    height: fit-content;
+    height: 110vh;
   }
   .loginContainer {
     width: 350px;
