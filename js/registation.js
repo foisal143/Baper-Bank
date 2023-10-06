@@ -17,6 +17,9 @@ document.getElementById('btn-register').addEventListener('click', () => {
   if (pass != newPass) {
     document.getElementById('alertPass').innerText = '!Password not matched';
     return;
+  } else {
+    document.getElementById('alertPass').innerText = 'Registation successfull';
+    document.getElementById('alertPass').style.color = 'green';
+    userValue.push(userInfo);
   }
-  userValue.push(userInfo);
 });

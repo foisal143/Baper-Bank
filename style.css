@@ -93,7 +93,13 @@ h2 {
   font-family: 'Times New Roman', Times, serif;
   color: white;
 }
-
+input {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #45f3ff;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
 .subBtn {
   width: 195px;
   height: 40px;
@@ -207,4 +213,5 @@ h2 {
 #alertPass {
   color: tomato;
   margin-top: 5px;
+  font-family: monospace;
 }
