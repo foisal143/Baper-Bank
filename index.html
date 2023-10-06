@@ -5,23 +5,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Baper Bank</title>
 </head>
 
 <body>
-  <header class="my-10">
-    <h1 class="text-5xl text-center mt-16">Wellcome to <span class="font-semibold text-indigo-400">Baper Bank</span>
-    </h1>
-  </header>
+
 
   <main>
-    <div class="w-10/12 bg-cyan-600 py-5 px-8 mx-auto">
-      <h2 class="text-3xl font-semibold text-white">Please Login</h2>
-      <input id="email" type="email" class="w-10/12 px-2 block my-5 rounded" placeholder="Please enter your email">
-      <input id="password" type="password" class="w-10/12 px-2 block my-5 rounded"
-        placeholder="Please enter your password">
-      <button class="px-8 py-2 bg-orange-500 font-semibold text-white rounded hover:bg-blue-400 transition-all"
-        id="btn-submit">Login</button>
+
+    <h1 class="text-5xl font-bold font-serif  w-fit mx-auto  text-white mb-12 text-center mt-16">
+      Wellcome to
+      <span class="font-semibold text-[#45f3ff]">Baper
+        Bank</span>
+    </h1>
+
+    <div class="loginContainer">
+      <div class="form">
+        <div id="form-menu" class="w-full  mx-auto h-full">
+          <h2 class="text-3xl my-5 font-semibold text-white">Please Login</h2>
+          <div class="input ">
+            <label class="text-white text-2xl" for="email">Email:</label>
+            <input id="email" type="email" class=" h-9 px-2 block my-2 rounded" placeholder="Please enter your email">
+          </div>
+          <div class="input">
+            <label class="text-white text-2xl" for="password">Password:</label>
+            <input id="password" type="password" class=" h-9 my-2 px-2 block  rounded"
+              placeholder="Please enter your password">
+          </div>
+          <div class="subBtn my-5 rounded">
+
+            <div class="btnContainer"><button class="text-white rounded" id="btn-submit">Login</button></div>
+          </div>
+          <div class="text-white">
+            <span class="signup">Sign up for acount</span> / <button id="sginUpPage" class="text-blue-400">Sign
+              Up</button>
+          </div>
+        </div>
+        <!-- registation section -->
+        <div id="registation" class="text-white">
+          <div>
+            <h2 class="text-3xl">Registation Form</h2>
+          </div>
+          <div>
+            <label class="block my-2  text-2xl" for="name">Name:</label>
+            <input class="rounded h-8 px-1" type="text" placeholder="Enter your name">
+
+          </div>
+          <div>
+            <label class="block my-2  text-2xl" for="email">email:</label>
+            <input class="rounded h-8 px-1" type="email" placeholder="Enter your email">
+
+          </div>
+          <div>
+            <label class="block my-2  text-2xl" for="password">Password:</label>
+            <input class="rounded h-8 px-1" type="password" placeholder="Enter your password">
+
+          </div>
+          <div class="ms-2">
+            <label class="block my-2  text-2xl" for="password">New password:</label>
+            <input class="rounded h-8 px-1" type="password" placeholder="Enter your new password">
+
+          </div>
+          <div class="subBtn my-5 rounded">
+
+            <div class="btnContainer"><button class="text-white rounded" id="btn-submit">Register</button></div>
+          </div>
+          <div class="text-white">
+            <span class="signup">Allready have an acount</span> / <button id="loginPage" class="text-blue-400">Login
+              Up</button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class=" form bg-cyan-600 py-5 px-8 mx-auto">
+        
+      </div> -->
     </div>
   </main>
 

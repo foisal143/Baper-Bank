@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(background.avif);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.loginContainer {
+  width: 370px;
+  height: 490px;
+  background-color: rgba(50, 99, 135, 0.3);
+  padding: 2px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  border-radius: 0px 25px 0px 25px;
+}
+.loginContainer::before {
+  content: '';
+  width: 370px;
+  height: 490px;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  background: linear-gradient(60deg, transparent, #45f3ff, #45f3ff);
+  filter: blur(5px);
+  transform-origin: bottom right;
+  z-index: 1;
+  animation: animate infinite 4s linear;
+}
+.loginContainer::after {
+  content: '';
+  width: 370px;
+  height: 490px;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  background: linear-gradient(60deg, transparent, purple, purple);
+  filter: blur(5px);
+  transform-origin: bottom right;
+  z-index: 1;
+  animation: animate infinite 4s linear;
+  animation-delay: -2s;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.form {
+  /* background-color: rgba(50, 99, 135, 0.3); */
+  background: url(background.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 12;
+  overflow: hidden;
+  border-radius: 0px 25px 0px 25px;
+  inset: 3px;
+  position: absolute;
+}
+
+#form-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: all 0.3s;
+  left: 0;
+}
+label,
+h2 {
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 3px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.subBtn {
+  width: 195px;
+  height: 40px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.subBtn::before {
+  content: '';
+  position: absolute;
+  width: 195px;
+  height: 40px;
+
+  top: -50%;
+  left: -50%;
+  background: linear-gradient(60deg, transparent, #45f3ff, #45f3ff);
+  filter: blur(5px);
+  transform-origin: bottom right;
+  z-index: 1;
+
+  animation: animatBtn infinite 2s linear;
+}
+.subBtn::after {
+  content: '';
+  position: absolute;
+  width: 195px;
+  height: 40px;
+
+  top: -50%;
+  right: -50%;
+  background: linear-gradient(60deg, transparent, purple, purple);
+  filter: blur(5px);
+  transform-origin: bottom right;
+  z-index: 1;
+  animation-delay: -1s;
+  animation: animatBtn infinite 2s linear;
+}
+@keyframes animatBtn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#btn-submit {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 3px;
+  transition: 0.5s;
+  z-index: 2;
+}
+.btnContainer {
+  text-align: center;
+  background-color: black;
+  inset: 2px;
+  z-index: 5;
+  position: absolute;
+}
+#btn-submit:hover {
+  box-shadow: 0px 0px 5px #45f3ff, 0px 0px 25px #45f3ff, 0px 0px 50px #45f3ff,
+    0px 0px 200px #45f3ff;
+  background-color: #45f3ff;
+  color: black;
+}
+
+#sginUpPage,
+#loginPage {
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+.signup {
+  line-height: 20px;
+  letter-spacing: 2px;
+  font-family: 'Times New Roman', Times, serif;
+}
+/* registation  section */
+#registation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  position: absolute;
+  right: -100%;
+}

@@ -11,4 +11,17 @@ document.getElementById('btn-submit').addEventListener('click', () => {
   }
 });
 
-// bank.html er jonno js section
+// registation page er jonno js section
+
+document.getElementById('loginPage').addEventListener('click', () => {
+  const regPage = document.getElementById('registation');
+  const loginPage = document.getElementById('form-menu');
+  loginPage.style.left = '0';
+  regPage.style.right = '-100%';
+});
+document.getElementById('sginUpPage').addEventListener('click', () => {
+  const regPage = document.getElementById('registation');
+  const loginPage = document.getElementById('form-menu');
+  regPage.style.right = '0';
+  loginPage.style.left = '-100%';
+});

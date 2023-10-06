@@ -1,9 +1,7 @@
 function getValueInput(input) {
   const inputField = document.getElementById(input);
   const inputValueString = inputField.value;
-
   const inputValue = parseFloat(inputValueString);
-
   inputField.value = '';
   return inputValue;
 }
