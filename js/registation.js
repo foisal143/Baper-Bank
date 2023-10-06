@@ -14,6 +14,7 @@ document.getElementById('btn-register').addEventListener('click', () => {
     alert('Please Enter your Valid information');
     return;
   }
+
   if (pass != newPass) {
     document.getElementById('alertPass').innerText = '!Password not matched';
     return;
