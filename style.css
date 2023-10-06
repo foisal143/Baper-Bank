@@ -91,11 +91,9 @@ h2 {
   line-height: 20px;
   letter-spacing: 3px;
   font-family: 'Times New Roman', Times, serif;
+  color: white;
 }
 
-input {
-  color: black;
-}
 .subBtn {
   width: 195px;
   height: 40px;
@@ -205,4 +203,8 @@ input {
   .loginContainer {
     width: 350px;
   }
+}
+#alertPass {
+  color: tomato;
+  margin-top: 5px;
 }

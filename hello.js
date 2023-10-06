@@ -3,9 +3,15 @@ document.getElementById('btn-submit').addEventListener('click', () => {
   const email = emailInput.value;
   const passInput = document.getElementById('password');
   const password = passInput.value;
-
+  for (const element of userValue) {
+    if (element.email === email && element.password === password) {
+      window.location.href = 'bank.html';
+      return;
+    }
+  }
   if (email === 'foisal@gmail.com' && password === 'Foisal') {
     window.location.href = 'bank.html';
+    return;
   } else {
     alert('please enter your valid information!');
   }

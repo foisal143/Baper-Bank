@@ -43,7 +43,7 @@
           </div>
         </div>
         <!-- registation section -->
-        <div id="registation" class="text-white">
+        <div id="registation" class="">
           <div>
             <h2 class="text-3xl">Registation Form</h2>
           </div>
@@ -54,26 +54,28 @@
           </div>
           <div>
             <label class="block my-2  text-2xl" for="email">email:</label>
-            <input id="regiEmail" class="rounded h-8 px-1" type="email" placeholder="Enter your email">
+            <input id="regiEmail" class="rounded h-8 px-1" type="email" placeholder="Enter your email" required>
 
           </div>
           <div>
             <label class="block my-2  text-2xl" for="password">Password:</label>
-            <input id="regiPassword" class="rounded h-8 px-1" type="password" placeholder="Enter your password">
+            <input id="regiPassword" class="rounded h-8 px-1" type="password" placeholder="Enter your password"
+              required>
 
           </div>
           <div class="ms-2">
             <label class="block my-2  text-2xl" for="password">New password:</label>
-            <input id="newPass" class="rounded h-8 px-1" type="password" placeholder="Enter your new password">
+            <input id="newPass" class="rounded h-8 px-1" type="password" placeholder="Enter your new password" required>
+            <p id="alertPass"></p>
 
           </div>
-          <div class="subBtn my-5 rounded">
+          <div class="subBtn my-3 rounded">
 
             <div class="btnContainer"><button class="text-white rounded" id="btn-register">Register</button></div>
           </div>
           <div class="text-white">
             <span class="signup">Allready have an acount</span> / <button id="loginPage" class="text-blue-400">Login
-              Up</button>
+            </button>
           </div>
         </div>
       </div>
@@ -86,8 +88,8 @@
   <!-- js file -->
   <script src="js/function.js"></script>
   <script src="tailwind.config.js"></script>
-  <script src="hello.js"></script>
   <script src="js/registation.js"></script>
+  <script src="hello.js"></script>
 </body>
 
 </html>
