@@ -17,3 +17,9 @@ function calculation(inputId, value) {
   const setText = document.getElementById(inputId);
   setText.innerText = value;
 }
+
+function inputValueSt(id) {
+  const inputField = document.getElementById(id);
+  const inputValue = inputField.value;
+  return inputValue;
+}
