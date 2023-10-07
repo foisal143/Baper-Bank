@@ -31,3 +31,44 @@ document.getElementById('sginUpPage').addEventListener('click', () => {
   regPage.style.right = '0';
   loginPage.style.left = '-100%';
 });
+
+// password toggler section
+document.getElementById('toggler').addEventListener('click', () => {
+  const passField = document.getElementById('password');
+  const toggleInner = document.getElementById('toggler');
+  if (passField.type == 'password') {
+    passField.type = 'text';
+    toggleInner.innerHTML = `<i id="invisible" class="fa-regular fa-eye toggleIcon"></i>`;
+  } else {
+    passField.type = 'password';
+
+    toggleInner.innerHTML = `<i class="fa-regular fa-eye-slash toggleIcon"></i>`;
+  }
+});
+// password toggler  registation section
+document.getElementById('regiTogglerPass').addEventListener('click', () => {
+  const passField = document.getElementById('regiPassword');
+  const toggleInner = document.getElementById('regiTogglerPass');
+  if (passField.type == 'password') {
+    passField.type = 'text';
+    toggleInner.innerHTML = `<i id="invisible" class="fa-regular fa-eye toggleIcon"></i>`;
+  } else {
+    passField.type = 'password';
+
+    toggleInner.innerHTML = `<i class="fa-regular fa-eye-slash toggleIcon"></i>`;
+  }
+});
+// retype password toggler section
+
+document.getElementById('regiTogglerRePass').addEventListener('click', () => {
+  const passField = document.getElementById('newPass');
+  const toggleInner = document.getElementById('regiTogglerRePass');
+  if (passField.type == 'password') {
+    passField.type = 'text';
+    toggleInner.innerHTML = `<i id="invisible" class="fa-regular fa-eye toggleIcon"></i>`;
+  } else {
+    passField.type = 'password';
+
+    toggleInner.innerHTML = `<i class="fa-regular fa-eye-slash toggleIcon"></i>`;
+  }
+});

@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <title>Baper Bank</title>
 </head>
@@ -26,12 +29,14 @@
           <h2 class="text-3xl my-5 font-semibold text-white">Please Login</h2>
           <div class="input ">
             <label class="text-white text-2xl" for="email">Email:</label>
-            <input id="email" type="email" class=" h-9 px-2 block my-2 rounded" placeholder="Please enter your email">
+            <input id="email" type="email" class=" h-9 px-2 block my-2 rounded" placeholder=" Enter  email">
           </div>
-          <div class="input">
+          <div id="toggleSect" class="input">
             <label class="text-white text-2xl" for="password">Password:</label>
-            <input id="password" type="password" class=" h-9 my-2 px-2 block  rounded"
-              placeholder="Please enter your password">
+            <div class="flex justify-center items-center">
+              <input id="password" type="password" class=" h-9 my-2 px-2 block  rounded" placeholder=" Enter  password">
+              <span id="toggler"><i class="fa-regular fa-eye-slash toggleIcon"></i></span>
+            </div>
           </div>
           <div class="subBtn my-5 rounded">
 
@@ -49,27 +54,31 @@
           </div>
           <div>
             <label class="block my-2  text-2xl" for="name">Name:</label>
-            <input id="name" class="rounded h-8 px-1" type="text" placeholder="Enter your name">
+            <input id="name" class="rounded h-8 px-1" type="text" placeholder="Enter  name">
 
 
           </div>
           <div>
             <label class="block my-2  text-2xl" for="email">email:</label>
-            <input id="regiEmail" class="rounded h-8 px-1" type="email" placeholder="Enter your email" required>
+            <input id="regiEmail" class="rounded h-8 px-1" type="email" placeholder="Enter  email" required>
 
 
           </div>
           <div>
-            <label class="block my-2  text-2xl" for="password">Password:</label>
-            <input id="regiPassword" class="rounded h-8 px-1" type="password" placeholder="Enter your password"
-              required>
+            <label class="block my-2 ms-3  text-2xl" for="password">Password:</label>
+            <div class="flex regiToggle rounded-md justify-center items-center">
+              <input id="regiPassword" class="rounded h-8 px-1" type="password" placeholder="Enter  password" required>
+              <span id="regiTogglerPass"><i class="fa-regular fa-eye-slash toggleIcon"></i></span>
+            </div>
 
 
           </div>
           <div class="ms-2">
-            <label class="block my-2  text-2xl" for="password">Re Password:</label>
-            <input id="newPass" class="rounded h-8 px-1" type="password" placeholder="Enter retype your password"
-              required>
+            <label class="block my-2 ms-3  text-2xl" for="password">Re Password:</label>
+            <div class="flex regiToggle me-1 rounded-md justify-center items-center">
+              <input id="newPass" class="rounded h-8 px-1" type="password" placeholder=" Retype  password" required>
+              <span id="regiTogglerRePass"><i class="fa-regular fa-eye-slash toggleIcon"></i></span>
+            </div>
             <p id="alertPass"></p>
 
           </div>

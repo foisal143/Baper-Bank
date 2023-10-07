@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
   margin: 0;
@@ -215,4 +217,33 @@ p {
   color: tomato;
   margin-top: 5px;
   font-family: monospace;
+}
+/* toggler section */
+#toggler {
+  position: relative;
+  left: -25px;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 2px;
+}
+#toggleSect {
+  position: relative;
+  left: 10px;
+}
+.regiToggle {
+  position: relative;
+  left: 16px;
+  border: 1px solid #45f3ff;
+  padding: 0px 5px;
+  width: 86%;
+}
+.toggleIcon {
+  color: #45f3ff;
+  border-radius: 5px;
+}
+
+#regiPassword,
+#newPass {
+  border: none;
+  width: 90%;
 }
